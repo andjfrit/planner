@@ -1,0 +1,21 @@
+/* App.css */
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10vh 10vw; /* Padding for other components */
+  height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+}
+
+.header, .footer {
+  /* Set a fixed height for header and footer if needed */
+  height: 60px;
+  background-color: #f8f8f8;
+  padding: 10px;
+  text-align: center;
+}
+

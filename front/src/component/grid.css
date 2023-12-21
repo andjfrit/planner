@@ -1,0 +1,13 @@
+/* CalendarGrid.css */
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* 7 days a week */
+    gap: 10px; /* space between cells */
+  }
+  
+  .grid-cell {
+    border: 1px solid #ddd; /* Border for each cell */
+    padding: 10px; /* Padding inside each cell */
+    /* Additional styling */
+  }
+  

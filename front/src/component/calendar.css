@@ -1,0 +1,56 @@
+/* MyCalendar.css */
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10vh 10vw; /* Padding for other components */
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box; /* Include border in the total width/height */
+
+  }
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* 7 columns */
+    grid-template-rows: auto repeat(5, 1fr); /* 1 row for title + 5 rows */
+    width: calc(100% - 10vw); /* Adjust width based on padding */
+    height: calc(100% - 10vh); /* Adjust height based on padding */
+    text-align: left;
+    border: 15px solid #003153; /* Prussian Blue border, adjust thickness as needed */
+    box-sizing: border-box;
+}
+  
+  .calendar-cell {
+    border: 3px solid #70877F; /* Grid lines */
+    padding: 10px;
+    position: relative; /* For positioning the day number */
+  }
+  
+  .calendar-cell-number {
+    position: absolute;
+    top: 5px; /* Adjust as needed */
+    left: 5px; /* Adjust as needed */
+  }
+  
+  .calendar-title {
+    grid-column: 1 / -1; /* Full width */
+    text-align: center;
+    /* Additional styling for title */
+  }
+
+  /* MyCalendar.css */
+
+/* ... existing styles ... */
+
+
+  
+  /* Add any additional styling for hover effects, active states, etc. */
+  
+  
+  /* Responsive adjustments */
+@media (max-width: 600px) {
+    .app-container {
+      padding: 5vh 5vw; /* Less padding on smaller screens */
+    }}
